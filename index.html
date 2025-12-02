@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata Mahasiswa</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Times New Roman", serif;
+        background: #f5f5f5;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #container {
+        background: white;
+        width: 900px;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    /* Judul Latihan */
+    .judul-latihan {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Bagian header kampus */
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    #logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    .header-text {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .header-text .alamat {
+        font-style: italic;
+        font-size: 12px;
+    }
+
+    /* Garis biru */
+    .garis {
+        width: 100%;
+        height: 4px;
+        background: #1c3c80;
+        margin: 15px 0 25px 0;
+    }
+
+    /* Judul biodata */
+    .judul-form {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    /* Form biodata */
+    #form-biodata {
+        width: 650px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 150px 15px 1fr;
+        gap: 12px;
+        font-size: 15px;
+    }
+
+    label {
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid #888;
+        border-radius: 3px;
+        font-family: serif;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 60px;
+        resize: none;
+    }
+
+    .btn-area {
+        grid-column: 3 / 4;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 6px 12px;
+        border: 1px solid #777;
+        border-radius: 3px;
+        cursor: pointer;
+        background: #e6e6e6;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+    <!-- Header Universitas -->
+    <div id="header">
+        <div id="logo">
+            <img src="logo-unindra.jpg" alt="Logo UNINDRA">
+        </div>
+
+        <div class="header-text">
+            <b>UNIVERSITAS INDRAPRASTA PGRI </b><br>
+            <b>(UNINDRAA)</b><br>
+            <span class="alamat">Jl. Nangka No.58 Tanjung Barat - Jaksel</span>
+        </div>
+    </div>
+
+    <div class="garis"></div>
+
+    <div class="judul-form">BIODATA MAHASISWA</div>
+
+    <!-- Form Biodata -->
+    <form id="form-biodata">
+
+        <label for="nama">NAMA</label>
+        <div>:</div>
+        <input type="text" id="nama">
+
+        <label for="alamat">ALAMAT</label>
+        <div>:</div>
+        <textarea id="alamat"></textarea>
+
+        <label for="tgl">TANGGAL LAHIR</label>
+        <div>:</div>
+        <input type="text" id="tgl" placeholder="mm/dd/yyyy">
+
+        <label for="telp">TELP</label>
+        <div>:</div>
+        <input type="text" id="telp">
+
+        <label for="email">EMAIL</label>
+        <div>:</div>
+        <input type="email" id="email">
+
+        <div></div>
+        <div></div>
+
+        <div class="btn-area">
+            <button type="submit">SIMPAN</button>
+            <button type="reset">BATAL</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
