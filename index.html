@@ -27,7 +27,6 @@
         box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
-    /* Judul Latihan */
     .judul-latihan {
         font-size: 32px;
         font-weight: bold;
@@ -35,7 +34,7 @@
         margin-bottom: 20px;
     }
 
-    /* Bagian header kampus */
+    /* Header */
     #header {
         display: flex;
         justify-content: center;
@@ -47,6 +46,7 @@
     #logo img {
         width: 80px;
         height: auto;
+        display: block;
     }
 
     .header-text {
@@ -54,12 +54,16 @@
         font-size: 15px;
     }
 
-    .header-text .alamat {
+    .header-text b {
+        display: block;
+        line-height: 1.2;
+    }
+
+    .alamat {
         font-style: italic;
         font-size: 12px;
     }
 
-    /* Garis biru */
     .garis {
         width: 100%;
         height: 4px;
@@ -67,7 +71,6 @@
         margin: 15px 0 25px 0;
     }
 
-    /* Judul biodata */
     .judul-form {
         text-align: center;
         font-weight: bold;
@@ -75,7 +78,6 @@
         font-size: 18px;
     }
 
-    /* Form biodata */
     #form-biodata {
         width: 650px;
         margin: auto;
@@ -119,7 +121,6 @@
         background: #e6e6e6;
         font-weight: bold;
     }
-
 </style>
 </head>
 
@@ -127,15 +128,15 @@
 
 <div id="container">
 
-    <!-- Header Universitas -->
+    <!-- Header -->
     <div id="header">
         <div id="logo">
-            <img src="c:\Users\ASUS\Downloads\logo-unindra-removebg-preview.png" alt="Logo UNINDRA">
+            <img src="img/logo unindra.png" alt="Logo UNINDRA">
         </div>
 
         <div class="header-text">
-            <b>UNIVERSITAS INDRAPRASTA PGRI </b><br>
-            <b>(UNINDRAA)</b><br>
+            <b>UNIVERSITAS INDRAPRASTA PGRI</b>
+            <b>(UNINDRA)</b>
             <span class="alamat">Jl. Nangka No.58 Tanjung Barat - Jaksel</span>
         </div>
     </div>
@@ -144,37 +145,23 @@
 
     <div class="judul-form">BIODATA MAHASISWA</div>
 
-    <!-- Form Biodata -->
     <form id="form-biodata">
+        <label>NAMA</label><div>:</div><input type="text">
 
-        <label for="nama">NAMA</label>
-        <div>:</div>
-        <input type="text" id="nama">
+        <label>ALAMAT</label><div>:</div><textarea></textarea>
 
-        <label for="alamat">ALAMAT</label>
-        <div>:</div>
-        <textarea id="alamat"></textarea>
+        <label>TANGGAL LAHIR</label><div>:</div><input type="text" placeholder="mm/dd/yyyy">
 
-        <label for="tgl">TANGGAL LAHIR</label>
-        <div>:</div>
-        <input type="text" id="tgl" placeholder="mm/dd/yyyy">
+        <label>TELP</label><div>:</div><input type="text">
 
-        <label for="telp">TELP</label>
-        <div>:</div>
-        <input type="text" id="telp">
+        <label>EMAIL</label><div>:</div><input type="email">
 
-        <label for="email">EMAIL</label>
-        <div>:</div>
-        <input type="email" id="email">
-
-        <div></div>
-        <div></div>
+        <div></div><div></div>
 
         <div class="btn-area">
             <button type="submit">SIMPAN</button>
             <button type="reset">BATAL</button>
         </div>
-
     </form>
 
 </div>
